@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#884422"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Autos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lly_card01"
+                style="@style/card_style">
+                <ImageView
+                    android:src="@drawable/img_carro01"
+                    style="@style/imageview01"/>
+                <LinearLayout
+                    style="@style/layout01">
+                    <TextView
+                        android:text="Marca"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Nombre"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Year"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Precio"
+                        style="@style/feature01"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_card02"
+                style="@style/card_style">
+                <ImageView
+                    android:src="@drawable/img_carro02"
+                    style="@style/imageview01"/>
+                <LinearLayout
+                    style="@style/layout01">
+                    <TextView
+                        android:text="Marca"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Nombre"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Year"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Precio"
+                        style="@style/feature01"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_card03"
+                style="@style/card_style">
+                <ImageView
+                    android:src="@drawable/img_carro03"
+                    style="@style/imageview01"/>
+                <LinearLayout
+                    style="@style/layout01">
+                    <TextView
+                        android:text="Marca"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Nombre"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Year"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Precio"
+                        style="@style/feature01"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_card04"
+                style="@style/card_style">
+                <ImageView
+                    android:src="@drawable/img_carro04"
+                    style="@style/imageview01"/>
+                <LinearLayout
+                    style="@style/layout01">
+                    <TextView
+                        android:text="Marca"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Nombre"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Year"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Precio"
+                        style="@style/feature01"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_card05"
+                style="@style/card_style">
+                <ImageView
+                    android:src="@drawable/img_carro05"
+                    style="@style/imageview01"/>
+                <LinearLayout
+                    style="@style/layout01">
+                    <TextView
+                        android:text="Marca"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Nombre"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Year"
+                        style="@style/feature01"/>
+                    <TextView
+                        android:text="Precio"
+                        style="@style/feature01"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/txv_sucursales"
+        android:text="Ver sucursales"
+        android:textColor="@color/black"
+        android:background="#887799"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
+
