@@ -2,6 +2,7 @@
     <string name="app_name">Kuruma</string>
     <string name="detalles_del_automovil">Detalles del Automovil</string>
     <string name="sucursales_en_edomex">Sucursales en EDOMEX</string>
+    <string name="ver_sucursales">Ver sucursales</string>
 
     <string-array name="list01">
         <item>Example 1</item>

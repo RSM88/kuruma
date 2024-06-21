@@ -50,7 +50,7 @@
             android:id="@+id/imv_back"
             android:layout_width="400dp"
             android:layout_height="400dp"
-            android:src="@drawable/edomex"/>
+            android:src="@drawable/edomex02"/>
 
 
         <Space

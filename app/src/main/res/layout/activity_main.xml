@@ -7,167 +7,205 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="#884422"
     tools:context=".MainActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/carretera">
 
         <TextView
-            android:text="Autos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            android:text="Catlogo de autos"
+            style="@style/titulo01"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lly_card01"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro01"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="Cobra"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Golden Air 10"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1980"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="200000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_card02"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro02"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="FireRed"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Ultra Car 6000"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1945"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="150000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_card03"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro03"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="DibloBlack"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Satan30000"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1912"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1000000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_card04"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro04"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="FireRed"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Vector 1"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1978"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="300000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_card05"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro05"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="Continental"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Super Car"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1980"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="450000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_card06"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro06"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="Continental"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Mega Car"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1990"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="550000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_card07"
+                    style="@style/card_style">
+                    <ImageView
+                        android:src="@drawable/img_carro07"
+                        style="@style/imageview01"/>
+                    <LinearLayout
+                        style="@style/layout01">
+                        <TextView
+                            android:text="Prusian"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="Weimar"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="1970"
+                            style="@style/feature01"/>
+                        <TextView
+                            android:text="110000"
+                            style="@style/feature01"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/txv_sucursales"
+            android:text="@string/ver_sucursales"
+            style="@style/titulo02"
+            android:layout_weight="1"/>
+
 
     </LinearLayout>
-
-
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_weight="10">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/lly_card01"
-                style="@style/card_style">
-                <ImageView
-                    android:src="@drawable/img_carro01"
-                    style="@style/imageview01"/>
-                <LinearLayout
-                    style="@style/layout01">
-                    <TextView
-                        android:text="Marca"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Nombre"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Year"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Precio"
-                        style="@style/feature01"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lly_card02"
-                style="@style/card_style">
-                <ImageView
-                    android:src="@drawable/img_carro02"
-                    style="@style/imageview01"/>
-                <LinearLayout
-                    style="@style/layout01">
-                    <TextView
-                        android:text="Marca"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Nombre"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Year"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Precio"
-                        style="@style/feature01"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lly_card03"
-                style="@style/card_style">
-                <ImageView
-                    android:src="@drawable/img_carro03"
-                    style="@style/imageview01"/>
-                <LinearLayout
-                    style="@style/layout01">
-                    <TextView
-                        android:text="Marca"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Nombre"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Year"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Precio"
-                        style="@style/feature01"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lly_card04"
-                style="@style/card_style">
-                <ImageView
-                    android:src="@drawable/img_carro04"
-                    style="@style/imageview01"/>
-                <LinearLayout
-                    style="@style/layout01">
-                    <TextView
-                        android:text="Marca"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Nombre"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Year"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Precio"
-                        style="@style/feature01"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/lly_card05"
-                style="@style/card_style">
-                <ImageView
-                    android:src="@drawable/img_carro05"
-                    style="@style/imageview01"/>
-                <LinearLayout
-                    style="@style/layout01">
-                    <TextView
-                        android:text="Marca"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Nombre"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Year"
-                        style="@style/feature01"/>
-                    <TextView
-                        android:text="Precio"
-                        style="@style/feature01"/>
-                </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-
-
-    <TextView
-        android:id="@+id/txv_sucursales"
-        android:text="Ver sucursales"
-        android:textColor="@color/black"
-        android:background="#887799"
-        android:textSize="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:layout_weight="1"/>
 
 
 </LinearLayout>

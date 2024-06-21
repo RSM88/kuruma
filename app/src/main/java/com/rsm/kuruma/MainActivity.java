@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout lly_card01, lly_card02, lly_card03, lly_card04, lly_card05;
+    LinearLayout lly_card01, lly_card02, lly_card03, lly_card04, lly_card05, lly_card06, lly_card07;
     TextView txv_sucursales;
 
     @Override
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         lly_card03 = findViewById(R.id.lly_card03);
         lly_card04 = findViewById(R.id.lly_card04);
         lly_card05 = findViewById(R.id.lly_card05);
+        lly_card06 = findViewById(R.id.lly_card06);
+        lly_card07 = findViewById(R.id.lly_card07);
 
         txv_sucursales = findViewById(R.id.txv_sucursales);
 
@@ -91,13 +93,37 @@ public class MainActivity extends AppCompatActivity {
 
         lly_card05.setOnClickListener(v -> {
             intent.putExtra("imagen", R.drawable.img_carro05);
-            intent.putExtra("marca", "Continent");
+            intent.putExtra("marca", "Continental");
             intent.putExtra("nombre", "Super Car");
             intent.putExtra("year", "1980");
             intent.putExtra("precio", "450000");
             intent.putExtra("kilometraje", "900");
             intent.putExtra("motor", "motor hibrido");
             intent.putExtra("garantia", "Platinum");
+            startActivity(intent);
+        });
+
+        lly_card06.setOnClickListener(v -> {
+            intent.putExtra("imagen", R.drawable.img_carro06);
+            intent.putExtra("marca", "Continental");
+            intent.putExtra("nombre", "Mega Car");
+            intent.putExtra("year", "1990");
+            intent.putExtra("precio", "550000");
+            intent.putExtra("kilometraje", "400");
+            intent.putExtra("motor", "motor hidrogeno");
+            intent.putExtra("garantia", "Premium");
+            startActivity(intent);
+        });
+
+        lly_card07.setOnClickListener(v -> {
+            intent.putExtra("imagen", R.drawable.img_carro07);
+            intent.putExtra("marca", "Prusian");
+            intent.putExtra("nombre", "Weimar");
+            intent.putExtra("year", "1970");
+            intent.putExtra("precio", "110000");
+            intent.putExtra("kilometraje", "1400");
+            intent.putExtra("motor", "motor combustion");
+            intent.putExtra("garantia", "Silver");
             startActivity(intent);
         });
 
