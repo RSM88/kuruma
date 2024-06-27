@@ -2,35 +2,30 @@ package com.rsm.kuruma;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Se declaran variables de tipo "LinearLayout" y "TextView"
     LinearLayout lly_card01, lly_card02, lly_card03, lly_card04, lly_card05, lly_card06, lly_card07;
     TextView txv_sucursales;
 
+
+    // Metodo principal de inicio de este activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Aqui se indica el layout (archivo con elementos visibles) asociado
+        // a este activity (MainActivity)
         setContentView(R.layout.activity_main);
 
+        // Se asigna valor a variables
+        // Se les asocia con su respectiva contraparte (un elemento visible)
+        // por medio de su identificador en "activity_main.xml"
         lly_card01 = findViewById(R.id.lly_card01);
         lly_card02 = findViewById(R.id.lly_card02);
         lly_card03 = findViewById(R.id.lly_card03);
@@ -38,12 +33,20 @@ public class MainActivity extends AppCompatActivity {
         lly_card05 = findViewById(R.id.lly_card05);
         lly_card06 = findViewById(R.id.lly_card06);
         lly_card07 = findViewById(R.id.lly_card07);
-
         txv_sucursales = findViewById(R.id.txv_sucursales);
 
+        // Este objeto sirve para indicar a cual activity queremos movernos
+        // en este caso se indica el activity "Detalles"
+        // Aqui solo se "carga". Todavia no se ejecuta
         Intent intent = new Intent(this, Detalles.class);
 
+        // Se configura/se le asigna un "evento OnClick" a cada elemnto layout
+        // En esta vista cada layout al ser presionado carga diferentes datos
+        // correspondientes a un auto en especifico segun el caso
         lly_card01.setOnClickListener(v -> {
+            // Se carga de datos/objetos al "Intent" que nos va a llevar
+            // al siguiente activity. Empaqueta pares de elementos:
+            // "nombre/key", "valor". Pueden ser de distinto tipo; String, int, etc.
             intent.putExtra("imagen", R.drawable.img_carro01);
             intent.putExtra("marca", "Cobra");
             intent.putExtra("nombre", "Golden Air 10");
@@ -52,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("kilometraje", "140");
             intent.putExtra("motor", "motor de agua");
             intent.putExtra("garantia", "Premium");
+
+            // Aqui se ejecuta el intent
             startActivity(intent);
         });
 
@@ -129,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
         txv_sucursales.setOnClickListener(v -> {
 
+            // Se carga el activity "Sucursales" y se ejecuta
             Intent intent01 = new Intent(this, Sucursales.class);
             startActivity(intent01);
         });

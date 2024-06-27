@@ -4,11 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Sucursales extends AppCompatActivity {
 
@@ -19,9 +15,12 @@ public class Sucursales extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sucursales);
 
+        // Se asocia variable "imv_back01" con elemento
+        // visible "imv_back01" en "activity_sucursales"
         imv_back01 = findViewById(R.id.imv_back01);
 
-
+        // Se configura "intent" y "imv_back01" para volver
+        // a "MainActivity" al precionar imagen
         Intent intent = new Intent(this, MainActivity.class);
         imv_back01.setOnClickListener(v -> startActivity(intent));
 
